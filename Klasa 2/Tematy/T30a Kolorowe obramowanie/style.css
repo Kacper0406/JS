@@ -1,0 +1,9 @@
+body{
+    background-image: linear-gradient(red, yellow);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+img {
+    border: 5px solid #555;
+}

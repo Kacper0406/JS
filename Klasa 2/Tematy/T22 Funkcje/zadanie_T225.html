@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T224</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="text-align: center;">
+    <h1>T225</h1>
+    <h2>Autor: Kacper Zając 2ir grupa 2</h2>
+    <hr>
+
+    <input type="number" id="liczba_a" placeholder="0">
+    <input type="number" id="liczba_b" placeholder="0">
+
+    <button onclick="NWD()">Oblicz</button>
+    <h2 id="wynik">Wynik: </h2>
+</div>
+
+<script>
+    const liczba_a = document.querySelector('#liczba_a');
+    const liczba_b = document.querySelector('#liczba_b');
+    const btn  = document.querySelector('button');
+    const wynik = document.querySelector('#wynik');
+
+    btn.addEventListener('click', function() {
+        let a = parseInt(liczba_a.value)
+        let b = parseInt(liczba_b.value)
+
+        function Euklides(a, b){
+            while(a !== b){
+                if(a > b){
+                    a -= b;
+                } else{
+                    b -= a;
+                }
+            }
+            return a;
+        }
+        wynik.innerHTML = Euklides(a,b);
+    })
+</script>
+</body>
+</html>

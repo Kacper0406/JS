@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T221</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+    function absolute1(x){
+        if(x>0) return x;
+        return -x;
+    }
+    function absolute2(x){
+        return (x>0 ? x : -x);
+    }
+    function zwieksz(x){
+        x+=1
+        document.write(x + "<br>");
+    }
+
+    let arg = 5;
+    document.write(absolute1(arg) + "<br>");
+    document.write(absolute2(arg) + "<br>");
+    zwieksz(arg);
+</script>
+</body>
+</html>

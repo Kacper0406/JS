@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pogotowie komputerowe</title>
+  <link rel="stylesheet" href="styl.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<section id="kontener">
+    <section id="baner">
+        <img src="img/animacja.gif" alt="baner">
+    </section>
+    <section id="menu">
+        <a href="index.html">O nas</a>
+        <a href="kontakt.html">Kontakt</a>
+    </section>
+    <section id="glowny">
+        <div class="column">
+
+        </div>
+        <div class="column">
+            <h3>Formularz kontaktowy</h3>
+            <form>
+            <table>
+                <tr>
+                    <td>Imie: </td>
+                    <td><input type="text" id="name-input"></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko: </td>
+                    <td><input type="text" id="surname-input"></td>
+                </tr>
+                <tr>
+                    <td>E-mail: </td>
+                    <td><input type="email" id="email-input"></td>
+                </tr>
+                <tr>
+                    <td>Usługa: </td>
+                    <td>
+                        <select>
+                            <option value="naprawa komputera">naprawa komputera</option>
+                            <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                            <option value="problemy z oprogramowaniem">problemy z oprogramowaniem</option>
+                            <option value="konfiguracja sieci LAN">konfiguracja sieci LAN</option>
+                            <option value="inne">inne</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wyślij kopię wiadomości: </td>
+                    <td><input type="checkbox" id="copy-input" checked="checked"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="reset" id="reset-button">Resetuj</input>
+                        <button id="submit-button">Prześlij</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="form">
+
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        <div class="column">
+
+        </div>
+    </section>
+    <section id="stopka">
+        Autor strony: <p style="font-weight: bold">Kacper Zając</p>
+    </section>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

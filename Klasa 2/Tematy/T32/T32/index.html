@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T32</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-left: 50px">
+<header>
+  <h1>T32</h1>
+  <h2>Autor: Kacper Zając 2ir</h2>
+    <p>Zadanie polega na stworzeniu aplikacji JavaScript według wzoru pokazanego na grafice. Zwróć uwagę, że nagłówek h1 "Ustalenie wartości za pomocą suwaka" - zmienia kolor na taki, jaki został wybrany przez użytkownika w polu "Ocena kolorem". Również łańcuch znaków "ocena kolorem", powinien być zapisany w wybranym kolorze.</p>
+  <hr>
+</header>
+<section>
+    <h1 id="header">Ustalanie wartości za pomocą suwaka</h1>
+    <h3>Komponent range</h3>
+    <hr>
+    <div><input type="range" id="ocenaInput" min="0" max="10"><label>Poziom zadowolenia obsługą w skali od 0 do 15</label></div>
+    <input type="date" id="dataInput"><p>Data wykonania usługi</p>
+    <input type="color" id="kolorInput"><p>Ocena kolorem</p>
+    <button>Działaj</button>
+    <p id="data">Usługę wykonano:</p>
+    <p id="ocena">Ocena klienta:</p>
+    Ocena kolorem: <span id="kolorowe">ocena kolorem</span>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

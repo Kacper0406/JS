@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Czołg</title>
+</head>
+
+<body>
+    <div id="container" style="text-align: center;">
+        <button id="fire">Strzał</button>
+        <button id="reload">Przeładuj</button>
+        <button id="info">Info</button><br>
+        <div id="data" style="line-height: 30px;">
+
+        </div>
+    </div>
+    <script>
+        const box = document.getElementById("data");
+        const fireBtn = document.querySelector('#fire');
+        const reloadBtn = document.querySelector('#reload');
+        const infoBtn = document.querySelector('#info');
+
+        class Tank {
+            nazwa = "T-72"
+            kolor = "Zielony"
+            amunicja = 5;
+
+            info = function () {
+                box.innerHTML += `Nazwa: ${this.nazwa} <br> Kolor: ${this.kolor} <br> Amunicja: ${this.amunicja} <br>`
+            }
+
+            strzal = function () {
+                if (this.amunicja > 0) {
+                    box.innerHTML += "Bum! ";
+                    this.amunicja -= 1;
+                    box.innerHTML += `Pozostało ${this.amunicja} pocisków! </br>`
+                }
+                else {
+                    box.innerHTML += `Brak amunicji! Przeładuj! </br>`
+                }
+            }
+            przeladuj = function () {
+                box.innerHTML += "Przeładowanie! "
+                this.amunicja += 1;
+                box.innerHTML += `Jest ${this.amunicja} załadowanych pocisków! </br>`
+            }
+        }
+
+        let czolg = new Tank();
+
+        fireBtn.addEventListener('click', function () {
+            czolg.strzal()
+        })
+        reloadBtn.addEventListener('click', function () {
+            czolg.przeladuj()
+        })
+        infoBtn.addEventListener('click', function () {
+            czolg.info()
+        })
+    </script>
+</body>
+
+</html>

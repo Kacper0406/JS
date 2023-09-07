@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T224</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+    const liczba = (a, b) => {
+        if(a > b){
+            document.body.innerHTML = `<h1 style="color: red; float: left">${a}</h1>
+                                       <h1 style="color: white; float: left"> > </h1>
+                                       <h1 style="color: blue; float: left">${b}</h1>`
+        }
+        if(b > a){
+            document.body.innerHTML = `<h1 style="color: blue; float: left">${a}</h1>
+                                       <h1 style="color: white; float: left"> > </h1>
+                                       <h1 style="color: red; float: left">${b}</h1>`
+        }
+        if(a == b){
+            document.body.innerHTML = `<h1 style="color: lawngreen; float: left">${a}</h1>
+                                       <h1 style="color: white; float: left"> > </h1>
+                                       <h1 style="color: lawngreen; float: left">${b}</h1>`
+        }
+    }
+
+    liczba(5,5);
+</script>
+</body>
+</html>

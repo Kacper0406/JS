@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var osoba = {
+        nazwisko: "Nowacki",
+        imie: "Marek",
+        zawod: "informatyk",
+        pokaz: function (){
+            document.write(this.imie + ' ' + this.nazwisko + "<br>")
+        }
+    };
+    osoba.pokaz();
+//----------------------------------------------------------
+    var ksiazka = {
+        autor: "J.K Rowling",
+        tytul: "Harry Potter",
+        wydawca: "Nowa Era",
+        wyswietl: function (){
+            document.write(`Tytuł: ${this.tytul} <br> Autor: ${this.autor} <br> Wydawca: ${this.wydawca}`)
+        }
+    };
+
+    ksiazka.wyswietl();
+
+</script>
+</body>
+</html>

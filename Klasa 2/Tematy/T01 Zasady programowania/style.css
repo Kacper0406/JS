@@ -1,0 +1,50 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    background-image: url("/Tematy/T01 Zasady programowania/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    backdrop-filter: blur(25px);
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+#container{
+    margin: 20px 150px 0px 150px;
+    
+}
+dt {
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.important-text {
+    background-color: yellow;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,th {
+    background-color: #e4ecf4;
+    border: 3px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #e4ecf4;
+}

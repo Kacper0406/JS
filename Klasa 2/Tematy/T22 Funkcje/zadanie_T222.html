@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T222</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+    function potega(x,y){
+        let wynik=x;
+        for(i=0;i<=y-x; i++){
+            wynik *=x;
+        }
+        return wynik;
+    }
+
+    let x = 2;
+    let y = 3;
+    let wynik = potega(x,y)
+    document.write(`${x}<sup>${y}</sup> = ${wynik}`)
+</script>
+</body>
+</html>

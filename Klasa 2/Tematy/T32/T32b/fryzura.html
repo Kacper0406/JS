@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T32b</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-left: 50px">
+<header>
+  <h1>T32b</h1>
+  <h2>Autor: Kacper Zając 2ir</h2>
+    <p>Utwórz stronę html o nazwie fryzura.html. Strona powinna posiadać następującą zawartość:</p>
+    <p>Wymagania dotyczące skryptu:
+    <ul>
+        <li>Napisany w języku wykonywanym po stronie przeglądarki</li>
+        <li>Uruchamia się po wciśnięciu przycisku na stronie fryzura.html</li>
+        <li> Podaje cenę strzyżenia w zależności od wyboru dokonanego przez pola radio zgodnie z cennikiem w tabeli</li>
+        <li>Wyświetla wynik działania pod przyciskiem według wzoru: „Cena strzyżenia: wartość”, gdzie wartość oznacza cenę strzyżenia dla wskazanej długości włosów.</li>
+    </ul>
+  <hr>
+</header>
+<section>
+    <h1>Dziś promocja na strzyżenie włosów</h1>
+    <form>
+        <div><input type="radio" name="typ" id="typ1" value="25zł"><label>Krótkie</label></div>
+        <div><input type="radio" name="typ" id="typ2" value="30zł"><label>Średnie</label></div>
+        <div><input type="radio" name="typ" id="typ3" value="40zł"><label>Półdługie</label></div>
+        <div><input type="radio" name="typ" id="typ4" value="50zł"><label>Długie</label></div>
+        <button>Odkryj promocje</button>
+        <h3>Cena strzyżenia: 0zł</h3>
+    </form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

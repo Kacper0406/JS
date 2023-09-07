@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+#kontener{
+    font-family: sans-serif;
+    background-color: Linen;
+    color: #222;
+    margin: auto;
+    width: 90%;
+}
+
+.baner{
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+
+#baner1{
+    float: left;
+}
+
+#baner2{
+    float: right;
+}
+
+#glowny{
+    padding: 20px;
+}
+
+#stopka{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+table{
+    margin: 40px;
+}
+
+td{
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+a{
+    color: #aaa;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+ul{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: solid white 1px;
+}

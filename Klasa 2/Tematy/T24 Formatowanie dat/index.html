@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="text-align: center;">
+
+    <input type="date" id="dateInput">
+    <button>Sprawdź</button>
+    <h1 id="wynik"></h1>
+
+</div>
+<script>
+
+    const btn = document.querySelector('button');
+    const input = document.querySelector('input');
+    btn.addEventListener('click', function () {
+
+        let today = new Date();
+        let birth = new Date(Date.parse(input.value))
+        let birthMonth = birth.getMonth();
+        let birthDay = birth.getDay();
+
+        let currentYear = today.getFullYear();
+
+        let birthday = new Date(currentYear, birthMonth - 1, birthDay);
+
+        if (today > birthday) {
+            birthday.setFullYear(currentYear + 1);
+        }
+
+        let diff = birthday - today;
+
+        let days = Math.floor(diff / 86400000);
+
+        wynik.innerHTML = `Do twoich urodzin pozostało ${days} dni`
+    })
+</script>
+</body>
+</html>

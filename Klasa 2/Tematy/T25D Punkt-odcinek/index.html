@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="container" style="text-align: center;">
+
+</div>
+<script>
+    const box = document.getElementById("container");
+
+    class Punkt {
+        nazwa = "Punkt A"
+        x = "2"
+        y = "5"
+
+        info = function (){
+            document.write(`Odcinek ${this.nazwa} {x=${this.x} y=${this.y}}`)
+        }
+    }
+
+    function Odcinek(pkt1, pkt2) {
+        this.pkt1 = pkt1;
+        this.pkt2 = pkt2;
+
+        this.dlugosc = function (){
+            document.write(`Długość odcinka |AB| = ${Math.sqrt(Math.pow(pkt2.x - pkt1.x, 2) + Math.pow(pkt2.y - pkt1.y, 2))}`)
+        }
+    }
+
+    let pkt = new Punkt();
+    pkt.info();
+</script>
+</body>
+</html>

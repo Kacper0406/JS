@@ -1,0 +1,32 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(45, 56, 87);
+    margin: 0;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color: rgba(255, 255, 255, 0.884);
+    font-weight: 500;
+}
+h3{
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 300;
+}
+p{
+    color: white;
+}
+label{
+    color: white;
+}
+footer{
+    text-align: center;
+    background-color: rgb(26, 37, 68);
+    padding: 10px;
+    font-weight: 500;
+}

@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(55, 71, 95);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    color: white;
+}
+h2{
+    color: rgba(255, 255, 255, 0.884);
+    font-weight: 500;
+}
+h3{
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 300;
+}
+#wynik{
+    font-size: 40px;
+}

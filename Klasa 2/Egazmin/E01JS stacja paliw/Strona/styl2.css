@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+section{
+    font-family: Cambria;
+}
+#baner, #stopka {
+    background-color: rgb(120, 0, 46);
+    color: #fff;
+    padding: 5px;
+    font-size: 150%;
+}
+
+#menu {
+    background-color: rgb(173, 20, 87);
+    height: 11vh
+}
+
+#lewy {
+    background-color: Snow;
+    color: OliveDrab;
+    width: 70vw;
+    height: 55vh;
+    display: block;
+}
+
+#prawy {
+    background-color: rgb(173, 20, 87);
+    width: 30vw;
+    height: 55vh;
+    display: block;
+    float: right;
+}
+#lewy h2{
+    margin: 0;
+}
+#samochod {
+    margin: 40px;
+    padding: 10px;
+}
+
+#samochod:hover {
+    border: 1px dashed YellowGreen;
+}
+
+a {
+    padding: 0 50px;
+    margin: 0;
+    color: YellowGreen;
+}
+
+table,
+td {
+    border: 1px solid OliveDrab;
+}
+
+table {
+    width: 90%;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zasady programowania</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Zasady programowania</h1>
+            <h2>Autor: Kacper Zając 2ir</h2>
+            <hr>
+        </header>
+        <section>
+            <p>Język programowania służy do tworzenia programów komputerowych, których zadaniem jest przetwarzanie
+                danych,
+                wykonywanie obliczeń i algorytmów. Może zawierać
+                konstrukcje składniowe do manipulowania strukturami danych i zarządzania przepływem sterowania. Niektóre
+                języki programowania mają specyfikację swojej składni
+                i semantyki, inne zdefiniowane są jedynie przez oficjalne implementacje
+            </p>
+            <p>Elementy języka: </p>
+            <dl>
+                <dt>Składnia</dt>
+                <dd>zbiór reguł opisujących sposób definiowania struktur danych, rodzaje
+                    dostępnych słów kluczowych i symboli oraz zasady, według których symbole mogą
+                    być łączone w większe struktury.
+                </dd>
+                <dt>Semantyka</dt>
+                <dd>zbiór reguł definiujących znaczenie słów kluczowych i symboli oraz
+                    ich funkcji w programie.
+                </dd>
+                <dt>Typy danych</dt>
+                <dd>dostępne typy danych, ich właściwości oraz operacje, które mogą
+                    być wykonane na wartościach danego typu.
+                </dd>
+            </dl>
+        </section>
+        <section id="paradygmaty">
+            <h3>Paradygmaty programowania</h3>
+            <p>Paradygmaty programowania opisują między innymi programowanie:</p>
+            <ul>
+                <li>strukturalne</li>
+                <li>obiektowe</li>
+                <li>proceduralne</li>
+                <li>funkcyjne</li>
+                <li>uogólnione</li>
+            </ul>
+        </section>
+        <section id="skrypty">
+            <h3>Skryptowe języki programowania</h3>
+            <dl>
+                <dt>Skrypt</dt>
+                <dd>t to napisany w języku skryptowym program, który jest wykonywany wewnątrz
+                    aplikacji.
+                </dd>
+                <dt>Język skryptowy</dt>
+                <dd>to język programowania służący do wykonywania wyspecjalizowanych czynności. Języki skryptowe są
+                    tworzone
+                    z myślą o interakcji z użytkownikiem.
+                    Często są wykorzystywane do zadań administracyjnych. Bywają również osadzane
+                    w programach w celu zautomatyzowania powtarzających się czynności. Są używane
+                    do tworzenia dynamicznych stron internetowych. Stosowane w grach komputerowych
+                    służą do sterowania przebiegiem gry
+                </dd>
+            </dl>
+        </section>
+        <section id="algorytmy">
+            <h3>Proste algorytmy</h3>
+            <p style="display: inline;" class="important-text bold">Algorytm</p>
+            <p style="display: inline;" class="important-text">to zestaw ściśle określonych czynności prowadzących do
+                wykonania pewnego
+                zadania. Określa sposób rozwiązania problemu i ma zastosowanie w różnych dziedzinach. Języki
+                programowania
+                to narzędzia, które bardzo dobrze nadają się do zapisu
+                algorytmów. Aby napisać dobry program komputerowy, należy opracować skuteczny
+                algorytm i zdefiniować dla niego odpowiednie struktury danych.
+            </p>
+        </section>
+        <section id="reprezentacja-algorytmow">
+            <h3>reprezentacja algorytmów</h3>
+            <h4>Schematy blokowe</h4>
+            <table>
+                <tr>
+                    <th style="width:30%">Symbol</th>
+                    <th>Opis</th>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/start.png" alt="Start" height="100px"></center>
+                    </td>
+                    <td>Początek algorytmu, start programu. Od tego miejsca rozpoczyna
+                        się wykonywanie operacji.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/stop.png" alt="Stop" height="100px"></center>
+                    </td>
+                    <td>Koniec algorytmu, zakończenie programu.
+                        W tym miejscu następuje zakończenie wykonywania operacji.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/strzalka.png" alt="Strzałka" height="100px"></center>
+                    </td>
+                    <td>Połączenie między blokami. Wskazuje kolejność wykonywania
+                        operacji.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/instrukcja.png" alt="Instrukcja" height="100px"></center>
+                    </td>
+                    <td>Wykonanie operacji, blok obliczeniowy. Wewnątrz tego symbolu
+                        znajdują się operacje do wykonania.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/wczytaj.png" alt="Wczytaj" height="100px"></center>
+                    </td>
+                    <td>Wprowadzanie danych. Wewnątrz tego symbolu określamy dane
+                        wejściowe, które muszą zostać wczytane.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/wyswietl.png" alt="Wyświetl" height="100px"></center>
+                    </td>
+                    <td>Wyprowadzanie danych. Wewnątrz tego symbolu określamy
+                        dane wyjściowe, które powinny zostać wyprowadzone jako
+                        wynik.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/warunek.png" alt="Warunek" height="100px"></center>
+                    </td>
+                    <td>Warunek logiczny, blok decyzyjny. Umożliwia tworzenie rozgałęzień w algorytmie. Jeżeli warunek
+                        jest
+                        spełniony, to następuje
+                        przejście do gałęzi oznaczonej „Tak”, w przeciwnym razie następuje przejście do gałęzi
+                        oznaczonej
+                        „Nie”.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/podprogram.png" alt="dołączenie podprogramu" height="100px"></center>
+                    </td>
+                    <td>Proces wstępnie zdefiniowany. Symbol ten oznacza dołączenie
+                        podprogramu.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/lacznik.png" alt="Łącznik" height="100px"></center>
+                    </td>
+                    <td>
+                        Łącznik. Odwołanie na stronie. Służy do oznaczenia miejsc
+                        łączenia schematu, na przykład gdyby linie łączące na schemacie
+                        musiały się krzyżować.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="img/miedzystrony.png" alt="Start" height="100px"></center>
+                    </td>
+                    <td>Łącznik międzystronicowy. Służy do oznaczenia miejsc łączenia
+                        schematu, gdy nie mieści się on na jednej stronie.
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>

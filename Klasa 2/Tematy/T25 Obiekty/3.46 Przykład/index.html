@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Przyklad 3.46
+  function Klient(nazwisko_k, imie_k, zawod_k) {
+    this.nazwisko = nazwisko_k;
+    this.imie = imie_k;
+    this.zawod = zawod_k;
+    this.wypisz = function() {
+      alert(this.nazwisko + ' ' + this.imie);
+    }
+    this.info = function (){
+      document.write(`Mam na imię ${this.imie}, nazywam się ${this.nazwisko}. Mój zawód to ${this.zawod} <br>`)
+    }
+  }
+  // ---------------------------------------------------------------------------------------------------------------
+  // Obiekt zwierze z przypisanym wlascicielem
+  // ---------------------------------------------------------------------------------------------------------------
+
+  function Zwierze(imie_z, gatunek_z, wlasciciel_z) {
+    this.imie = imie_z;
+    this.gatunek = gatunek_z;
+    this.wlasciciel = wlasciciel_z;
+
+    this.dane = function (){
+      document.write(`imię: ${this.imie}, gatunek: ${this.gatunek}. własciciel: ${this.wlasciciel.imie} ${this.wlasciciel.nazwisko} <br>`)
+    }
+  }
+
+  //Przykład 3.47
+  let osoba1 = new Klient('Kowalski', 'Jan', 'kierowca');
+  let osoba2 = new Klient('Nowak', 'Anna', 'sekretarka');
+  let pies1 = new Zwierze('Reksio', 'Pies', osoba2);
+  osoba1.wypisz();
+  osoba2.info();
+  pies1.dane();
+</script>
+</body>
+</html>
